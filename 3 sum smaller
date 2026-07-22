@@ -1,0 +1,22 @@
+class Solution {
+    public boolean isUgly(int n) {
+Arrays.sort(nums);
+int res = 0;
+int ans=0;
+for(int i=0;i<num.length-3;i++){
+int j= i+1;
+int k = num.length-1;
+while(j<k){
+res=nums[i]+nums[j]+nums[k];
+if(res< target){
+ans = ans(k-j);
+j++;
+k--;
+}
+else{
+j++;
+}
+}
+return ans;
+}
+}
