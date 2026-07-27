@@ -1,0 +1,13 @@
+class Solution {
+    public boolean isAnagram(String s, String t) {
+      char[]arr=s.toCharArray();
+      char[]nums=t.toCharArray();
+      Arrays.sort(arr);
+      Arrays.sort(nums);
+        if(Arrays.equals(arr,nums)){
+            return true;
+        }else{
+            return false;
+        }
+    }
+}
